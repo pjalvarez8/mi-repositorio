@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9</title>
+
+    <script>
+        var apunto=4;
+        function cambio(parametro, parametro2) {
+            document.getElementById('body').style.background=parametro;
+            apunto = parametro2;
+        }
+        function mas() {
+            switch(apunto){
+                case 1:
+                document.getElementById('body').style.background='green';
+                apunto++;
+                break;
+                case 2:
+                document.getElementById('body').style.background='blue';
+                apunto++;
+                break;
+                case 3:
+                document.getElementById('body').style.background='yellow';
+                apunto++;
+                break;
+                case 4:
+                document.getElementById('body').style.background='red';
+                apunto=1;
+                break;
+
+            }
+
+        }
+        
+    </script>
+</head>
+
+<body id="body">
+
+    <button onclick="cambio('red', 1);">Rojo</button>
+    <button onclick="cambio('green', 2);" >Verde</button>
+    <button onclick="cambio('blue', 3);" >Azul</button>
+    <button onclick="cambio('yellow', 4);" >Amarillo</button>
+    <button onclick="mas();">Mas</button>
+    
+</body>
+</html>
